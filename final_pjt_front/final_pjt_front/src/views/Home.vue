@@ -10,6 +10,15 @@
         v-else
       ></home-recommend>
     </div>
+    <div
+      class="d-flex align-items-center flex-column bg-secondary p-5"
+      v-else
+    >
+      <h2>로그인하고 영화 추천 받기!</h2><br>
+      <router-link to="/accounts/login">
+        <button class="btn-primary">go!</button>
+      </router-link>
+    </div>
     <home-all-genre></home-all-genre>
     
   </div>
